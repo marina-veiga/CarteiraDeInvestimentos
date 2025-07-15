@@ -51,16 +51,16 @@ typedef struct {
 ```
 ## Funções Principais
 
-## `lerCapitalDisponivel()`
+#### `lerCapitalDisponivel()`
 - Pega do arquivo quanto dinheiro tem pra investir.
   
-## `contarAcoes()`
+#### `contarAcoes()`
 - Conta quantas ações tem no arquivo.
 
-## `carregarAcoes()`
+#### `carregarAcoes()`
 - Lê as ações do arquivo e guarda tudo em um array pra usar depois.
 
-## `comprarPorRendimento()`
+#### `comprarPorRendimento()`
 - Escolhe as melhores ações pra comprar, olhando o rendimento delas.  
 - Sempre pega as que têm o maior rendimento, sem passar do dinheiro disponível.
 
@@ -81,7 +81,7 @@ D 250.00 5.0 ESTAVEL5
 Melhor combinação encontrada:
 Ações Selecionadas: {A, C, D}
 Custo Total: R$ 1000.00
-Retorno Total Esperado: 23.00%
+Retorno Total: 23.00% 
 ```
 ## Autores
 Este projeto foi desenvolvido por: **Diogo Costa** e **Marina Veiga**
