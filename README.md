@@ -1,9 +1,8 @@
-#Carteira De Investimentos
-
-#Descrição
+# Carteira De Investimentos
+## Descrição
 Este programa foi desenvolvido para avaliação da P3 da disciplina Linguagem de Programação I da Universidade Federal do Maranhão (UFMA), utilizando a linguagem de programação C. Ele tem como objetivo ler um arquivo que contém as ações disponíveis e o capital disponível, e a partir dessas informações, calcular a melhor combinação possível de ações que podem ser compradas com o capital informado. O objetivo é obter o maior rendimento total, sem ultrapassar o valor disponível.
 
-##Como Executar
+## Como Executar
 - **Compilador C** (ex: GCC ou MinGW)
 - **Git** (para clonar o repositório)
 
