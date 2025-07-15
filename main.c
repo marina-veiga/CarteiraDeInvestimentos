@@ -39,19 +39,16 @@ int main() {
     
     selecionarAcoes(ordenadas, quantidadeTotalDeAcoes, capital, 0, acoes_escolhidas, &totalEscolhidas, &somaCustos, &somaRetornos);
 
-    printf("\nMelhor combinacao encontrada:\n");
-    printf("Acoes Selecionadas: {");
+    printf("Capital Disponivel: R$ %.2f\n\n", capital);
 
-    int i;
-    for (i = 0; i < totalEscolhidas; i = i + 1) {
-        printf("%s", acoes_escolhidas[i].id);
-        if (i < totalEscolhidas - 1) {
-            printf(", ");
+    printf("Acoes a Comprar:\n");
+    for (int i = 0; i < totalEscolhidas; i++) {
+        printf("- Acao %s (Custo: R$ %.2f, Retorno: %.2f%%)\n", acoes_escolhidas[i].id, acoes_escolhidas[i].custo, acoes_escolhidas[i].retorno);
         }
-    }
-    printf("}\n");
+
+    printf("\nResumo da Carteira:\n");
     printf("Custo Total: R$ %.2f\n", somaCustos);
-    printf("Retorno Total: %.2f%%\n", somaRetornos);
+    printf("Retorno Maximo Esperado: %.2f%%\n", somaRetornos);
 
     free(acoes);
     free(ordenadas);   
