@@ -40,9 +40,7 @@ gcc main.c leitura.c investimentos.c -o programa.exe
 ---
 
 ## Struct Principal
-
-O programa utiliza uma struct para representar cada ação lida do arquivo:
-
+O programa usa uma struct para guardar as informações de cada ação que lê do arquivo.  
 ```c
 typedef struct {
     char id[2];           
@@ -53,16 +51,16 @@ typedef struct {
 ```
 ## Funções Principais
 
-### `lerCapitalDisponivel()`
+## `lerCapitalDisponivel()`
 - Pega do arquivo quanto dinheiro tem pra investir.
   
-### `contarAcoes()`
+## `contarAcoes()`
 - Conta quantas ações tem no arquivo.
 
-### `carregarAcoes()`
+## `carregarAcoes()`
 - Lê as ações do arquivo e guarda tudo em um array pra usar depois.
 
-### `comprarPorRendimento()`
+## `comprarPorRendimento()`
 - Escolhe as melhores ações pra comprar, olhando o rendimento delas.  
 - Sempre pega as que têm o maior rendimento, sem passar do dinheiro disponível.
 
