@@ -38,6 +38,34 @@ gcc main.c leitura.c investimentos.c -o programa.exe
 - Exibe a melhor combinação de ações para comprar, mostrando o custo total e o retorno esperado.
 
 ---
+
+## Struct Principal
+
+O programa utiliza uma struct para representar cada ação lida do arquivo:
+
+```c
+typedef struct {
+    char id[2];           
+    float custo;           
+    float retorno;         
+    float rendimento;      
+} Acao;
+```
+## Funções Principais
+
+### `lerCapitalDisponivel()`
+- Pega do arquivo quanto dinheiro tem pra investir.
+  
+### `contarAcoes()`
+- Conta quantas ações tem no arquivo.
+
+### `carregarAcoes()`
+- Lê as ações do arquivo e guarda tudo em um array pra usar depois.
+
+### `comprarPorRendimento()`
+- Escolhe as melhores ações pra comprar, olhando o rendimento delas.  
+- Sempre pega as que têm o maior rendimento, sem passar do dinheiro disponível.
+
 ## Exemplo de Entrada do Arquivo
 
 ```plaintext
